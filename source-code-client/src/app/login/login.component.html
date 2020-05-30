@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 login-form">
+      <h1 class="form-signin-heading">{{'iniciarsesion' | translate}}</h1>
+      <p class="lead"> <a routerLink="/register">{{'nomiembro' | translate}}</a> </p>
+      <form (submit)="login()">
+        <div class="avatar">
+          <img src="../../assets/avatar.png" alt="Avatar">
+        </div>
+        <div class="form-group">
+          <label for="email">{{'correo' | translate}}</label>
+          <input type="email" class="form-control" name="email" placeholder="Email"
+            [(ngModel)]="credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">{{'contrasena' | translate}}</label>
+          <input type="password" class="form-control" name="password" placeholder="Password"
+            [(ngModel)]="credentials.password">
+        </div>
+        <button type="submit" class="btn btn-default">{{'iniciar' | translate}}!</button>
+      </form>
+    </div>
+  </div>
+</div>

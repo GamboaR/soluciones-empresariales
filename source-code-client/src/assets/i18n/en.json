@@ -1,0 +1,22 @@
+{
+  "bienvenido" : "Welcome",
+  "inicio" : "Home",
+  "iniciar":"Login",
+  "salir":"Logout",
+  "iniciarsesion" : "Login",
+  "registrate" : "Register",
+  "correo": "Email",
+  "contrasena" : "Password",
+  "miembro": "Member",
+  "nomiembro": "Not a member? Please register instead.",
+  "simiembro": "Already a member? Please log in instead",
+  "perfil": "Your profile",
+  "usuarios": "Users",
+  "nombre": "Name",
+  "opciones": "Options",
+  "editar": "Edit",
+  "eliminar": "Delete",
+  "ingles": "English",
+  "espanol": "Spanish",
+  "idioma": "Language"
+} 

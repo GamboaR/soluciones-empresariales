@@ -1,0 +1,25 @@
+{
+  "bienvenido" : "Bienvenido",
+  "inicio" : "Inicio",
+  "iniciar":"Iniciar",
+  "salir":"Salir",
+  "iniciarsesion" : "Iniciar sesión",
+  "registrate" : "Registrate",
+  "correo": "Correo Electronico",
+  "contrasena" : "Contraseña",
+  "miembro": "Miembro",
+  "nomiembro": "No eres miembro? Por favor, registrate",
+  "simiembro": "Ya eres miembro?, Por favor inicia sesión",
+  "perfil": "Tu perfil",
+  "usuarios": "Usuarios",
+  "nombre": "Nombre",
+  "opciones": "Opciones",
+  "editar": "Editar",
+  "eliminar": "Eliminar",
+  "ingles": "Inglés",
+  "espanol": "Español",
+  "idioma": "Idioma"
+
+
+
+} 

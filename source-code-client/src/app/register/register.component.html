@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6 login-form">
+      <h1>{{'registrate' | translate}}</h1>
+      <p class="lead"><a routerLink="/login">{{'simiembro' | translate}}</a> </p>
+      <form (submit)="register()" [formGroup]="form">
+        <div class="avatar">
+          <img src="../../assets/avatar.png" alt="Avatar">
+        </div>
+        <h2 class="text-center">{{'miembro' | translate}}</h2>   
+        <div class="form-group">
+          <label for="name">{{'nombre' | translate}}</label>
+          <input type="text" class="form-control" formControlName="name" required name="name" placeholder="{{'nombre' | translate}}" [(ngModel)]="credentials.name">
+        </div>
+        <div class="form-group">
+          <label for="email">{{'correo' | translate}}</label>
+          <input type="email" class="form-control" required name="email" formControlName="email" placeholder="{{'correo' | translate}}" [(ngModel)]="credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">{{'contrasena' | translate}}</label>
+          <input type="password" class="form-control"  required name="password" formControlName="password" placeholder="{{'contrasena' | translate}}" [(ngModel)]="credentials.password">
+        </div>
+        <button type="submit" class="btn btn-default" [disabled]="!form.valid">{{'registrate' | translate}}!</button>
+      </form>
+    </div>
+  </div>
+
+</div>

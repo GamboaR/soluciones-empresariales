@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+      
+       <div class="col-md-6">
+        <h1 class="form-signin-heading">{{'bienvenido' | translate}}</h1>
+        
+        <h1 class="form-signin-heading">{{'perfil' | translate}}</h1>
+  
+        <div class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-3 control-label"> {{'nombre' | translate}}</label>
+            <p class="form-control-static">{{ details?.name }}</p>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-3 control-label">{{'correo' | translate}}</label>
+            <p class="form-control-static">{{ details?.email }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{'usuarios' | translate}}</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">{{'nombre' | translate}}</th>
+              <th scope="col">{{'correo' | translate}}</th>
+              <th scope="col">{{'opciones' | translate}}</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let x of users;  let idx = index">
+              <td> {{idx +1}}</td>
+              <td > 
+                <input *ngIf="x._id != details._id" type="text" value="{{x.name}}" id="{{x._id}}">
+                <p *ngIf="x._id == details._id" >{{x.name}} </p>
+              </td>
+              <td>{{x.email}}</td>
+              <td *ngIf="x._id != details._id">
+                <button (click)="save(x._id)" type="button" class="btn btn-success" >{{'editar' | translate}}</button>
+                <button (click)="deleteUser(x._id)" type="button" class="btn btn-danger">{{'eliminar' | translate}}</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
